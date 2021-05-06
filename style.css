@@ -1,0 +1,955 @@
+.title{
+  font-size: 15px;
+  background-color: rgb(177, 177, 177);
+  text-align: center;
+   position: fixed;
+    width:400px; 
+    height: 70px; 
+    margin-left: 480px; 
+    border-radius: 20px; 
+    text-decoration: underline; 
+    z-index: -2; 
+    margin-top: -10px;
+}
+.yellowSquare{
+  background-color: rgba(255, 240, 25,.9);
+        margin-left:1250px; 
+        margin-top:535px; 
+        width:100px; 
+        height:100px;
+    
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    
+    animation:yellowMove 5s;
+    animation-delay: 0s;
+    }
+    
+    @keyframes yellowMove{
+    0% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 620px;margin-top: 290px;}
+    30% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 620px;margin-top: 290px;}
+    45%{background-color: rgba(255, 240, 25,.7);margin-top:367px;transform: rotate(-45deg);}
+    50%{background-color: rgba(255, 240, 25,.7);margin-left: 620px;margin-top:236px;transform: rotate(-45deg);}
+    75%{background-color: rgba(255, 240, 25,.7);margin-left: 620px;margin-top:236px;transform: rotate(0deg);width: 100px;height: 100px;}
+    78%{background-color: rgba(255, 240, 25,.7);margin-left: 630px;margin-top:246px;transform: rotate(0deg);width: 80px;height: 80px;}
+    100%{background-color: rgba(255, 240, 25,.7);margin-left:1250px; margin-top:535px; transform: rotate(0deg);}
+    }
+    
+    .redSquare{
+    background-color: rgba(236, 0, 0, .9);
+        margin-left: 1250px; 
+        margin-top: 37px;
+        width:100px; 
+        height:100px;
+    position: fixed;
+    animation:redMove 5s;
+    animation-delay: 0s;
+    }
+    
+    @keyframes redMove{
+    0% {background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 619px; margin-top: 190px;transform: rotate(45deg);}
+    30%{background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 619px; margin-top: 190px;transform: rotate(45deg);}
+    45% {background-color: rgba(236, 0, 0, .7);margin-top:102px;transform: rotate(-45deg);}
+    50%{background-color: rgba(236, 0, 0, .7);margin-left: 620px;margin-top:236px;transform: rotate(-45deg);}
+    75%{background-color: rgba(236, 0, 0, .7);margin-left: 620px;margin-top:236px;transform: rotate(0deg);width: 100px;height: 100px;}
+    78%{background-color: rgba(236, 0, 0, .7);margin-left: 630px;margin-top:246px;transform: rotate(0deg);width: 80px;height: 80px;}
+    100%{background-color: rgba(236, 0, 0, .7);margin-left: 1250px; margin-top: 37px;transform: rotate(0deg);}
+    }
+    
+    .greenSquare{
+      background-color: rgba(2, 212, 2, .9); 
+    width:100px; 
+    height:100px;
+    margin-left: 0px; 
+    margin-top: 37px;
+    animation: greenMove2 5s;
+    position: fixed;
+    animation: greenMove 5s; 
+    animation-delay: 0s;
+    }
+    
+    @keyframes greenMove{
+    0% {background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg);width: 80px; height: 80px; margin-left: 591px; margin-top: 287px;}
+    30%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg); width: 80px; height: 80px; margin-left: 591px; margin-top: 287px;}
+    45% {background-color: rgba(2, 212, 2, 0.7);margin-left:487px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+    50% {background-color: rgba(2, 212, 2, 0.7);margin-left:620px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+    75%{background-color: rgba(2, 212, 2, 0.7);margin-left:620px;margin-top:236px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+    78%{background-color: rgba(2, 212, 2, 0.7);margin-left:630px;margin-top:246px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+    100%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px;margin-left: 0px; margin-top: 37px;}
+    }
+    
+    .blueSquare{
+    background-color: rgba(0, 0, 180, 0);
+    background-color: rgba(0, 0, 180, .9);
+      margin-left: 0px; 
+      margin-top: 535px; 
+      transform: rotate(0deg) skewX(0deg) skewY(0deg); 
+      width:100px; 
+      height:100px;  
+    position: fixed;
+    animation: blueMove 5s;
+    animation-delay: 0s;
+    }
+    
+    @keyframes blueMove{
+    0%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 667px;margin-top: 287px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+    30%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 667px;margin-top: 287px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+    45% {background-color: rgba(0, 0, 180, .7);margin-left: 753px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+    50% {background-color: rgba(0, 0, 180, .7);margin-left: 620px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+    75%{background-color: rgba(0, 0, 180, .7);margin-left: 620px;margin-top:236px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+    78%{background-color: rgba(0, 0, 180, .7);margin-left: 630px;margin-top:246px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+    100%{background-color: rgba(0, 0, 180, .7);margin-left: 0px; margin-top: 535px; transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px; }
+    }
+    
+    .logoCircle{
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        margin-left: 520px;
+        margin-top: 135px;
+        background-color: rgba(255,255,255,0);
+        border-radius: 500px;
+        animation: circleBlip 3.9s;
+        animation-delay: 0s;
+    }
+    
+    @keyframes circleBlip{
+    0%{background-color:white;}
+    96%{width: 300px; height: 300px;margin-left: 520px;margin-top: 135px;}
+    97%{background-color:white; margin-left: 625px; margin-top: 233px;}
+    100%{background-color:rgba(255,255,255,0);height:0px; width:0px;margin-left: 625px; margin-top: 233px;}
+    }
+ 
+      .summaryInfo{
+        position: fixed;
+        background-color: rgba(105, 105, 105, .7);
+        width: 1250px;
+        height: 540px;
+        margin-top: 70px;
+        margin-left: 50px;
+        border-radius:10px;
+        animation: summaryInfoMove 4.9s;
+        z-index: -1;
+      }
+      
+    @keyframes summaryInfoMove{
+      0% {background-color: rgba(255, 255, 255, 0);}
+      99% {background-color: rgba(255, 255, 255, 0);width:0px; height:0px;margin-left: 630px;margin-top:176px}
+      100% {background-color: rgba(255, 255, 255, .5);}
+    }
+    
+    .workHistory{
+    background-color:rgba(255, 255, 255, .7);
+    width: 500px;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: 600px;
+    position:fixed;
+    z-index: 1;
+    border-radius:10px;
+    border: 3px solid rgba(0,0,0,.9);
+    animation: workHistoryMove 5s;
+    }
+    @keyframes workHistoryMove {
+      0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+      98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+      100%{background-color:rgba(255, 255, 255, .7);}
+    }
+    
+    .resumeInfo3{
+    background-color: rgba(255, 255, 255, .7);
+    height: 500px;
+    width: 300px;
+    margin-top: 90px;
+    margin-left: 250px;
+    position: fixed;
+    border-radius:10px;
+    border: 3px solid rgba(0,0,0,.9);
+    animation: resumeInfo3Blip 5s;
+    }
+    @keyframes resumeInfo3Blip{
+      0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px; color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+      98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+      100%{background-color:rgba(255, 255, 255, .7);}
+    }
+
+    /*
+    .scout1a{
+      background-color: rgba(255, 240, 25,.1);
+      display: block;
+    position: fixed;
+    width: 400px;
+    height: 650px;
+    z-index: 2;
+    border: 1px solid rgb(255, 251, 0);
+    }
+    
+    
+    .scout1b{
+      background-color: rgba(255, 0, 179, 0.1);
+      display: block;
+    position: fixed;
+    width: 800px;
+    height: 400px;
+    z-index: 2;
+    border: 1px solid rgb(255, 0, 212);
+    }
+    
+    
+    .scout2{
+      background-color: rgba(25, 255, 224, 0.1);
+      display: block;
+    position: fixed;
+    width: 1365px;
+    height: 650px;
+    z-index: 2;
+    border: 1px solid rgb(0, 204, 255);
+    margin-top: 0px;
+    margin-left: 0px;
+    }
+    
+    
+    .scout3a{
+      background-color: rgba(0, 209, 35, 0.1);
+      display: block;
+    position: fixed;
+    width: 800px;
+    height: 1120px;
+    z-index: 2;
+    border: 1px solid rgb(9, 255, 0);
+    }
+    
+    
+    .scout3b{
+      background-color: rgba(255, 25, 25, 0.1);
+      display: block;
+    position: fixed;
+    width: 1270px;
+    height: 650px;
+    z-index: 2;
+    border: 1px solid rgb(255, 25, 25);
+    }
+    */
+    
+    
+   
+    /*-----------------------------------------------------tabletB Horizontal(Complete!)-------------------------------------------------------*/
+    @media screen and (max-width: 1270px){
+      .title{
+        font-size: 15px;
+        background-color: rgb(177, 177, 177);
+        text-align: center;
+         position: fixed;
+          width:400px; 
+          height: 70px; 
+          margin-left: 400px; 
+          border-radius: 20px; 
+          text-decoration: underline; 
+          z-index: -2; 
+          margin-top: -10px;
+      }
+      .yellowSquare{
+        background-color: rgba(255, 240, 25,.9);
+              margin-left:1150px; 
+              margin-top:535px; 
+              width:100px; 
+              height:100px;
+          
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          
+          animation:yellowMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes yellowMove{
+          0% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 570px;margin-top: 290px;}
+          30% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 570px;margin-top: 290px;}
+          45%{background-color: rgba(255, 240, 25,.7);margin-top:367px;transform: rotate(-45deg);}
+          50%{background-color: rgba(255, 240, 25,.7);margin-left: 570px;margin-top:236px;transform: rotate(-45deg);}
+          75%{background-color: rgba(255, 240, 25,.7);margin-left: 570px;margin-top:236px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(255, 240, 25,.7);margin-left: 580px;margin-top:246px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(255, 240, 25,.7);margin-left:1150px; margin-top:535px; transform: rotate(0deg);}
+          }
+          
+          .redSquare{
+          background-color: rgba(236, 0, 0, .9);
+              margin-left: 1150px; 
+              margin-top: 37px;
+              width:100px; 
+              height:100px;
+          position: fixed;
+          animation:redMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes redMove{
+          0% {background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 569px; margin-top: 190px;transform: rotate(45deg);}
+          30%{background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 569px; margin-top: 190px;transform: rotate(45deg);}
+          45% {background-color: rgba(236, 0, 0, .7);margin-top:102px;transform: rotate(-45deg);}
+          50%{background-color: rgba(236, 0, 0, .7);margin-left: 570px;margin-top:236px;transform: rotate(-45deg);}
+          75%{background-color: rgba(236, 0, 0, .7);margin-left: 570px;margin-top:236px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(236, 0, 0, .7);margin-left: 580px;margin-top:246px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(236, 0, 0, .7);margin-left: 1150px; margin-top: 37px;transform: rotate(0deg);}
+          }
+          
+          .greenSquare{
+            background-color: rgba(2, 212, 2, .9); 
+          width:100px; 
+          height:100px;
+          margin-left: 0px; 
+          margin-top: 37px;
+          animation: greenMove2 5s;
+          position: fixed;
+          animation: greenMove 5s; 
+          animation-delay: 0s;
+          }
+          
+          @keyframes greenMove{
+          0% {background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg);width: 80px; height: 80px; margin-left: 541px; margin-top: 287px;}
+          30%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg); width: 80px; height: 80px; margin-left: 541px; margin-top: 287px;}
+          45% {background-color: rgba(2, 212, 2, 0.7);margin-left:437px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          50% {background-color: rgba(2, 212, 2, 0.7);margin-left:570px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          75%{background-color: rgba(2, 212, 2, 0.7);margin-left:570px;margin-top:236px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(2, 212, 2, 0.7);margin-left:580px;margin-top:246px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px;margin-left: 0px; margin-top: 37px;}
+          }
+          
+          .blueSquare{
+          background-color: rgba(0, 0, 180, 0);
+          background-color: rgba(0, 0, 180, .9);
+            margin-left: 0px; 
+            margin-top: 535px; 
+            transform: rotate(0deg) skewX(0deg) skewY(0deg); 
+            width:100px; 
+            height:100px;  
+          position: fixed;
+          animation: blueMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes blueMove{
+          0%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 617px;margin-top: 287px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          30%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 617px;margin-top: 287px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          45% {background-color: rgba(0, 0, 180, .7);margin-left: 703px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          50% {background-color: rgba(0, 0, 180, .7);margin-left: 570px;margin-top:236px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          75%{background-color: rgba(0, 0, 180, .7);margin-left: 570px;margin-top:236px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(0, 0, 180, .7);margin-left: 580px;margin-top:246px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(0, 0, 180, .7);margin-left: 0px; margin-top: 535px; transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px; }
+          }
+          
+          .logoCircle{
+              position: fixed;
+              width: 300px;
+              height: 300px;
+              margin-left: 470px;
+              margin-top: 135px;
+              background-color: rgba(255,255,255,0);
+              border-radius: 500px;
+              animation: circleBlip 3.9s;
+              animation-delay: 0s;
+          }
+          
+          @keyframes circleBlip{
+          0%{background-color:white;}
+          96%{width: 300px; height: 300px;margin-left: 470px;margin-top: 135px;}
+          97%{background-color:white; margin-left: 575px; margin-top: 233px;}
+          100%{background-color:rgba(255,255,255,0);height:0px; width:0px;margin-left: 625px; margin-top: 283px;}
+          }
+       
+            .summaryInfo{
+              position: fixed;
+              background-color: rgba(105, 105, 105, .7);
+              width: 1150px;
+              height: 540px;
+              margin-top: 70px;
+              margin-left: 50px;
+              border-radius:10px;
+              animation: summaryInfoMove 4.9s;
+              z-index: -1;
+            }
+            
+          @keyframes summaryInfoMove{
+            0% {background-color: rgba(255, 255, 255, 0);}
+            99% {background-color: rgba(255, 255, 255, 0);width:0px; height:0px;margin-left: 630px;margin-top:176px}
+            100% {background-color: rgba(255, 255, 255, .5);}
+          }
+          
+          .workHistory{
+          background-color:rgba(255, 255, 255, .7);
+          width: 500px;
+          height: 500px;
+          margin-top: 90px;
+          margin-left: 550px;
+          position:fixed;
+          z-index: 1;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: workHistoryMove 5s;
+          }
+          @keyframes workHistoryMove {
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+          
+          .resumeInfo3{
+          background-color: rgba(255, 255, 255, .7);
+          height: 500px;
+          width: 300px;
+          margin-top: 90px;
+          margin-left: 200px;
+          position: fixed;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: resumeInfo3Blip 5s;
+          }
+          @keyframes resumeInfo3Blip{
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px; color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 630px;margin-top:176px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+      
+    } 
+    /*-------------------------------------------------------tabletA(Complete!)-----------------------------------------------------*/
+    @media screen and (max-width: 800px){
+      .title{
+        font-size: 12px;
+        background-color: rgb(177, 177, 177);
+        text-align: center;
+         position: fixed;
+          width:400px; 
+          height: 70px; 
+          margin-left: 195px;
+          margin-top: 0px; 
+          border-radius: 20px; 
+          text-decoration: underline; 
+          z-index: -2; 
+          margin-top: -10px;
+      }
+      .yellowSquare{
+        background-color: rgba(255, 240, 25,.9);
+              margin-left:675px; 
+              margin-top:1020px; 
+              width:100px; 
+              height:100px;
+          
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          
+          animation:yellowMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes yellowMove{
+          0% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 345px;margin-top: 540px;}
+          30% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 345px;margin-top: 540px;}
+          45%{background-color: rgba(255, 240, 25,.7);margin-top:617px;transform: rotate(-45deg);}
+          50%{background-color: rgba(255, 240, 25,.7);margin-left: 345px;margin-top:486px;transform: rotate(-45deg);}
+          75%{background-color: rgba(255, 240, 25,.7);margin-left: 345px;margin-top:486px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(255, 240, 25,.7);margin-left: 355px;margin-top:496px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(255, 240, 25,.7);margin-left:675px; margin-top:1020px; transform: rotate(0deg);}
+          }
+          
+          .redSquare{
+          background-color: rgba(236, 0, 0, .9);
+              margin-left: 675px; 
+              margin-top: 37px;
+              width:100px; 
+              height:100px;
+          position: fixed;
+          animation:redMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes redMove{
+          0% {background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 344px; margin-top: 440px;transform: rotate(45deg);}
+          30%{background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 344px; margin-top: 440px;transform: rotate(45deg);}
+          45% {background-color: rgba(236, 0, 0, .7);margin-top:352px;transform: rotate(-45deg);}
+          50%{background-color: rgba(236, 0, 0, .7);margin-left: 345px;margin-top:486px;transform: rotate(-45deg);}
+          75%{background-color: rgba(236, 0, 0, .7);margin-left: 345px;margin-top:486px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(236, 0, 0, .7);margin-left: 355px;margin-top:496px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(236, 0, 0, .7);margin-left: 675px; margin-top: 37px;transform: rotate(0deg);}
+          }
+          
+          .greenSquare{
+            background-color: rgba(2, 212, 2, .9); 
+          width:100px; 
+          height:100px;
+          margin-left: 0px; 
+          margin-top: 37px;
+          animation: greenMove2 5s;
+          position: fixed;
+          animation: greenMove 5s; 
+          animation-delay: 0s;
+          }
+          
+          @keyframes greenMove{
+          0% {background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg);width: 80px; height: 80px; margin-left: 316px; margin-top: 537px;}
+          30%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg); width: 80px; height: 80px; margin-left: 316px; margin-top: 537px;}
+          45% {background-color: rgba(2, 212, 2, 0.7);margin-left:212px;margin-top:486px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          50% {background-color: rgba(2, 212, 2, 0.7);margin-left:345px;margin-top:486px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          75%{background-color: rgba(2, 212, 2, 0.7);margin-left:345px;margin-top:486px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(2, 212, 2, 0.7);margin-left:355px;margin-top:496px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px;margin-left: 0px; margin-top: 37px;}
+          }
+          
+          .blueSquare{
+          background-color: rgba(0, 0, 180, .9);
+            margin-left: 0px; 
+            margin-top: 1020px; 
+            transform: rotate(0deg) skewX(0deg) skewY(0deg); 
+            width:100px; 
+            height:100px;  
+          position: fixed;
+          animation: blueMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes blueMove{
+          0%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 392px;margin-top: 537px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          30%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 392px;margin-top: 537px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          45% {background-color: rgba(0, 0, 180, .7);margin-left: 478px;margin-top:486px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          50% {background-color: rgba(0, 0, 180, .7);margin-left: 345px;margin-top:486px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          75%{background-color: rgba(0, 0, 180, .7);margin-left: 345px;margin-top:486px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(0, 0, 180, .7);margin-left: 355px;margin-top:496px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(0, 0, 180, .7);margin-left: 0px; margin-top: 1020px; transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px; }
+          }
+          
+          .logoCircle{
+              position: fixed;
+              width: 300px;
+              height: 300px;
+              margin-left: 245px;
+              margin-top: 385px;
+              background-color: rgba(255,255,255,0);
+              border-radius: 500px;
+              animation: circleBlip 3.9s;
+              animation-delay: 0s;
+          }
+          
+          @keyframes circleBlip{
+          0%{background-color:white;}
+          96%{width: 300px; height: 300px;margin-left: 245px;margin-top: 385px;}
+          97%{background-color:white; margin-left: 350px; margin-top: 483px;}
+          100%{background-color:rgba(255,255,255,0);height:0px; width:0px;margin-left: 500px; margin-top: 633px;}
+          }
+       
+            .summaryInfo{
+              position: fixed;
+              background-color: rgba(105, 105, 105, .7);
+              width: 675px;
+              height: 1025px;
+              margin-top: 70px;
+              margin-left: 50px;
+              border-radius:10px;
+              animation: summaryInfoMove 4.9s;
+              z-index: -1;
+            }
+            
+          @keyframes summaryInfoMove{
+            0% {background-color: rgba(255, 255, 255, 0);}
+            99% {background-color: rgba(255, 255, 255, 0);width:0px; height:0px;margin-left: 405px;margin-top:176px}
+            100% {background-color: rgba(255, 255, 255, .5);}
+          }
+          
+          .workHistory{
+          background-color:rgba(255, 255, 255, .7);
+          width: 570px;
+          height: 500px;
+          margin-top: 90px;
+          margin-left: 100px;
+          position:fixed;
+          z-index: 1;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: workHistoryMove 5s;
+          }
+          @keyframes workHistoryMove {
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+          
+          .resumeInfo3{
+          background-color: rgba(255, 255, 255, .7);
+          height: 450px;
+          width: 570px;
+          margin-top: 600px;
+          margin-left: 100px;
+          position: fixed;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: resumeInfo3Blip 5s;
+          }
+          @keyframes resumeInfo3Blip{
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px; color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+      
+    }
+    /*------------------------------------------------------phoneB horizontal--------------------------------------------------*/
+    @media screen and (max-height: 450px){
+      .title{
+        font-size: 12px;
+        background-color: rgb(177, 177, 177);
+        text-align: center;
+         position: fixed;
+          width:400px; 
+          height: 50px; 
+          margin-top: 10px;
+          margin-left: 200px; 
+          border-radius: 20px; 
+          text-decoration: underline; 
+          z-index: -2; 
+          margin-top: -10px;
+      }
+      .yellowSquare{
+        background-color: rgba(255, 240, 25,.9);
+              margin-left:700px; 
+              margin-top:300px; 
+              width:100px; 
+              height:100px;
+          
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          
+          animation:yellowMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes yellowMove{
+          0% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 345px;margin-top: 205px;}
+          30% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 345px;margin-top: 205px;}
+          45%{background-color: rgba(255, 240, 25,.7);margin-top:282px;transform: rotate(-45deg);}
+          50%{background-color: rgba(255, 240, 25,.7);margin-left: 345px;margin-top:151px;transform: rotate(-45deg);}
+          75%{background-color: rgba(255, 240, 25,.7);margin-left: 345px;margin-top:151px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(255, 240, 25,.7);margin-left: 355px;margin-top:161px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(255, 240, 25,.7);margin-left:700px; margin-top:300px; transform: rotate(0deg);}
+          }
+          
+          .redSquare{
+          background-color: rgba(236, 0, 0, .9);
+              margin-left: 700px; 
+              margin-top: 0px;
+              width:100px; 
+              height:100px;
+          position: fixed;
+          animation:redMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes redMove{
+          0% {background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 344px; margin-top: 105px;transform: rotate(45deg);}
+          30%{background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 344px; margin-top: 105px;transform: rotate(45deg);}
+          45% {background-color: rgba(236, 0, 0, .7);margin-top:18px;transform: rotate(-45deg);}
+          50%{background-color: rgba(236, 0, 0, .7);margin-left: 345px;margin-top:151px;transform: rotate(-45deg);}
+          75%{background-color: rgba(236, 0, 0, .7);margin-left: 345px;margin-top:151px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(236, 0, 0, .7);margin-left: 355px;margin-top:161px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(236, 0, 0, .7);margin-left: 700px; margin-top: 0px;transform: rotate(0deg);}
+          }
+          
+          .greenSquare{
+            background-color: rgba(2, 212, 2, .9); 
+          width:100px; 
+          height:100px;
+          margin-left: 0px; 
+          margin-top: 0px;
+          animation: greenMove2 5s;
+          position: fixed;
+          animation: greenMove 5s; 
+          animation-delay: 0s;
+          }
+          
+          @keyframes greenMove{
+          0% {background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg);width: 80px; height: 80px; margin-left: 316px; margin-top: 202px;}
+          30%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg); width: 80px; height: 80px; margin-left: 316px; margin-top: 202px;}
+          45% {background-color: rgba(2, 212, 2, 0.7);margin-left:212px;margin-top:151px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          50% {background-color: rgba(2, 212, 2, 0.7);margin-left:345px;margin-top:151px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          75%{background-color: rgba(2, 212, 2, 0.7);margin-left:345px;margin-top:151px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(2, 212, 2, 0.7);margin-left:355px;margin-top:161px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px;margin-left: 0px; margin-top: 0px;}
+          }
+          
+          .blueSquare{
+          background-color: rgba(0, 0, 180, .9);
+            margin-left: 0px; 
+            margin-top: 300px; 
+            transform: rotate(0deg) skewX(0deg) skewY(0deg); 
+            width:100px; 
+            height:100px;  
+          position: fixed;
+          animation: blueMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes blueMove{
+          0%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 392px;margin-top: 202px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          30%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 392px;margin-top: 202px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          45% {background-color: rgba(0, 0, 180, .7);margin-left: 478px;margin-top:151px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          50% {background-color: rgba(0, 0, 180, .7);margin-left: 345px;margin-top:151px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          75%{background-color: rgba(0, 0, 180, .7);margin-left: 345px;margin-top:151px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(0, 0, 180, .7);margin-left: 355px;margin-top:161px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(0, 0, 180, .7);margin-left: 0px; margin-top: 300px; transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px; }
+          }
+          
+          .logoCircle{
+              position: fixed;
+              width: 300px;
+              height: 300px;
+              margin-left: 245px;
+              margin-top: 50px;
+              background-color: rgba(255,255,255,0);
+              border-radius: 500px;
+              animation: circleBlip 3.9s;
+              animation-delay: 0s;
+          }
+          
+          @keyframes circleBlip{
+          0%{background-color:white;}
+          96%{width: 300px; height: 300px;margin-left: 245px;margin-top: 50px;}
+          97%{background-color:white; margin-left: 280px; margin-top: 90px;}
+          100%{background-color:rgba(255,255,255,0);height:0px; width:0px;margin-left: 280px; margin-top: 90px;}
+          }
+       
+            .summaryInfo{
+              position: fixed;
+              background-color: rgba(105, 105, 105, .7);
+              width: 700px;
+              height: 300px;
+              margin-top: 65px;
+              margin-left: 50px;
+              border-radius:10px;
+              animation: summaryInfoMove 4.9s;
+              z-index: -1;
+            }
+            
+          @keyframes summaryInfoMove{
+            0% {background-color: rgba(255, 255, 255, 0);}
+            99% {background-color: rgba(255, 255, 255, 0);width:0px; height:0px;margin-left: 405px;margin-top:176px}
+            100% {background-color: rgba(255, 255, 255, .5);}
+          }
+          
+          .workHistory{
+            font-size: 10px;
+          background-color:rgba(255, 255, 255, .7);
+          width: 425px;
+          height: 280px;
+          margin-top: 75px;
+          margin-left: 270px;
+          position:fixed;
+          z-index: 1;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: workHistoryMove 5s;
+          }
+          @keyframes workHistoryMove {
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+          
+          .resumeInfo3{
+            font-size: 10px;
+          background-color: rgba(255, 255, 255, .7);
+          height: 280px;
+          width: 160px;
+          margin-top: 75px;
+          margin-left: 100px;
+          position: fixed;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: resumeInfo3Blip 5s;
+          }
+          @keyframes resumeInfo3Blip{
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px; color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+      
+    }
+    /*-----------------------------------------------------phoneA (vertical)Complete!*--------------------------------------------------------*/
+    @media screen and (max-width: 450px){
+      .title{
+        font-size: 12px;
+        background-color: rgb(177, 177, 177);
+        text-align: center;
+         position: fixed;
+          width:400px; 
+          height: 45px; 
+          margin-left: 0px; 
+          border-radius: 20px; 
+          text-decoration: underline; 
+          z-index: -2; 
+          margin-top: -10px;
+      }
+      .yellowSquare{
+        background-color: rgba(255, 240, 25,.9);
+              margin-left:300px; 
+              margin-top:555px; 
+              width:100px; 
+              height:100px;
+          
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          
+          animation:yellowMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes yellowMove{
+          0% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 150px;margin-top: 335px;}
+          30% {background-color: rgba(255, 240, 25,.7);width:100px; height:100px;transform: rotate(45deg);margin-left: 150px;margin-top: 335px;}
+          45%{background-color: rgba(255, 240, 25,.7);margin-top:412px;transform: rotate(-45deg);}
+          50%{background-color: rgba(255, 240, 25,.7);margin-left: 150px;margin-top:281px;transform: rotate(-45deg);}
+          75%{background-color: rgba(255, 240, 25,.7);margin-left: 150px;margin-top:281px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(255, 240, 25,.7);margin-left: 155px;margin-top:291px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(255, 240, 25,.7);margin-left:300px; margin-top:555px; transform: rotate(0deg);}
+          }
+          
+          .redSquare{
+          background-color: rgba(236, 0, 0, .9);
+              margin-left: 300px; 
+              margin-top: 37px;
+              width:100px; 
+              height:100px;
+          position: fixed;
+          animation:redMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes redMove{
+          0% {background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 149px; margin-top: 235px;transform: rotate(45deg);}
+          30%{background-color: rgba(236, 0, 0, .7);width: 100px; height: 100px; margin-left: 149px; margin-top: 235px;transform: rotate(45deg);}
+          45% {background-color: rgba(236, 0, 0, .7);margin-top:147px;transform: rotate(-45deg);}
+          50%{background-color: rgba(236, 0, 0, .7);margin-left: 150px;margin-top:281px;transform: rotate(-45deg);}
+          75%{background-color: rgba(236, 0, 0, .7);margin-left: 150px;margin-top:281px;transform: rotate(0deg);width: 100px;height: 100px;}
+          78%{background-color: rgba(236, 0, 0, .7);margin-left: 155px;margin-top:291px;transform: rotate(0deg);width: 80px;height: 80px;}
+          100%{background-color: rgba(236, 0, 0, .7);margin-left: 300px; margin-top: 37px;transform: rotate(0deg);}
+          }
+          
+          .greenSquare{
+            background-color: rgba(2, 212, 2, .9); 
+          width:100px; 
+          height:100px;
+          margin-left: 0px; 
+          margin-top: 37px;
+          animation: greenMove2 5s;
+          position: fixed;
+          animation: greenMove 5s; 
+          animation-delay: 0s;
+          }
+          
+          @keyframes greenMove{
+          0% {background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg);width: 80px; height: 80px; margin-left: 121px; margin-top: 332px;}
+          30%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(33deg) skewX(35deg) skewY(15deg); width: 80px; height: 80px; margin-left: 121px; margin-top: 332px;}
+          45% {background-color: rgba(2, 212, 2, 0.7);margin-left:17px;margin-top:281px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          50% {background-color: rgba(2, 212, 2, 0.7);margin-left:150px;margin-top:281px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px;}
+          75%{background-color: rgba(2, 212, 2, 0.7);margin-left:150px;margin-top:281px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(2, 212, 2, 0.7);margin-left:155px;margin-top:291px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(2, 212, 2, 0.7);transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px;margin-left: 0px; margin-top: 37px;}
+          }
+          
+          .blueSquare{
+          background-color: rgba(0, 0, 180, .9);
+            margin-left: 0px; 
+            margin-top: 555px; 
+            transform: rotate(0deg) skewX(0deg) skewY(0deg); 
+            width:100px; 
+            height:100px;  
+          position: fixed;
+          animation: blueMove 5s;
+          animation-delay: 0s;
+          }
+          
+          @keyframes blueMove{
+          0%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 197px;margin-top: 332px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          30%{background-color: rgba(0, 0, 180, .7);width: 80px;height: 80px;margin-left: 197px;margin-top: 332px;transform: rotate(79deg) skewX(35deg) skewY(15deg);}
+          45% {background-color: rgba(0, 0, 180, .7);margin-left: 283px;margin-top:281px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          50% {background-color: rgba(0, 0, 180, .7);margin-left: 150px;margin-top:281px;transform: rotate(-45deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          75%{background-color: rgba(0, 0, 180, .7);margin-left: 150px;margin-top:281px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px}
+          78%{background-color: rgba(0, 0, 180, .7);margin-left: 155px;margin-top:291px;transform: rotate(0deg) skewX(0deg) skewY(0deg); width:80px; height:80px}
+          100%{background-color: rgba(0, 0, 180, .7);margin-left: 0px; margin-top: 555px; transform: rotate(0deg) skewX(0deg) skewY(0deg); width:100px; height:100px; }
+          }
+          
+          .logoCircle{
+              position: fixed;
+              width: 300px;
+              height: 300px;
+              margin-left: 50px;
+              margin-top: 180px;
+              background-color: rgba(255,255,255,0);
+              border-radius: 500px;
+              animation: circleBlip 3.9s;
+              animation-delay: 0s;
+          }
+          
+          @keyframes circleBlip{
+          0%{background-color:white;}
+          96%{width: 300px; height: 300px;margin-left: 50px;margin-top: 180px;}
+          97%{background-color:white; margin-left: 200px; margin-top: 483px;}
+          100%{background-color:rgba(255,255,255,0);height:0px; width:0px;margin-left: 250px; margin-top: 333px;}
+          }
+       
+            .summaryInfo{
+              position: fixed;
+              background-color: rgba(105, 105, 105, .7);
+              width: 355px;
+              height: 550px;
+              margin-top: 70px;
+              margin-left: 20px;
+              border-radius:10px;
+              animation: summaryInfoMove 4.9s;
+              z-index: -1;
+            }
+            
+          @keyframes summaryInfoMove{
+            0% {background-color: rgba(255, 255, 255, 0);}
+            99% {background-color: rgba(255, 255, 255, 0);width:0px; height:0px;margin-left: 405px;margin-top:176px}
+            100% {background-color: rgba(255, 255, 255, .5);}
+          }
+          
+          .workHistory{
+            font-size: 10px;
+          background-color:rgba(255, 255, 255, .7);
+          width: 205px;
+          height: 400px;
+          margin-top: 140px;
+          margin-left: 155px;
+          position:fixed;
+          z-index: 1;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: workHistoryMove 5s;
+          }
+          @keyframes workHistoryMove {
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }
+          
+          .resumeInfo3{
+            font-size: 10px;
+          background-color: rgba(255, 255, 255, .7);
+          height: 400px;
+          width: 120px;
+          margin-top: 140px;
+          margin-left: 25px;
+          position: fixed;
+          border-radius:10px;
+          border: 3px solid rgba(0,0,0,.9);
+          animation: resumeInfo3Blip 5s;
+          }
+          @keyframes resumeInfo3Blip{
+            0%{background-color:rgba(255, 255, 255, 0);width:0;height:0px; color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            98%{background-color:rgba(255, 255, 255, 0);width:0;height:0px;color: rgba(0, 0, 0, 0);border: 0px solid rgba(0, 0, 0, 0);margin-left: 405px;margin-top:426px}
+            100%{background-color:rgba(255, 255, 255, .7);}
+          }  
+    }
+    
